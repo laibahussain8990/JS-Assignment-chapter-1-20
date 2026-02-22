@@ -363,6 +363,340 @@
 // document.writeln("You will need " + totalNeeded + " " + favSnack + " to last you until the ripe old age of " + maxAge);
 
 
+// CHAPTER 6-9
+
+// QUESTION NO 1
+// var a = 10;
+
+// document.writeln("Result:<br>");
+// document.writeln("The value of a is: " + a + "<br>");
+// document.writeln("...........................................<br><br>");
+
+// document.writeln("The value of ++a is: " + (++a) + "<br>");
+// document.writeln("Now the value of a is: " + a + "<br><br>");
+
+// document.writeln("The value of a++ is: " + (a++) + "<br>");
+// document.writeln("Now the value of a is: " + a + "<br><br>");
+
+// document.writeln("The value of --a is: " + (--a) + "<br>");
+// document.writeln("Now the value of a is: " + a + "<br><br>");
+
+// document.writeln("The value of a-- is: " + (a--) + "<br>");
+// document.writeln("Now the value of a is: " + a + "<br>");
+
+
+// QUESTION NO 2
+// var a = 2, b = 1;
+// var result = --a - --b + ++b + b--;
+
+// document.writeln("a is " + a + "<br>");
+// document.writeln("b is " + b + "<br>");
+// document.writeln("result is " + result);
+
+
+// QUESTION NO 3
+// var name = prompt("Please enter your name:");
+
+// var greetMessage = "Hello " + name + ", welcome!";
+
+// Alert mein dikhane ke liye
+// alert(greetMessage);
+
+// Page par dikhane ke liye
+// document.write("<h1>" + greetMessage + "</h1>");
+
+
+// QUESTION NO 4
+// NOTE:question no 4 was blank in the assignment sheet,so Iam proceeding to question no 5
+
+
+// QUESTION NO 5
+// var num = prompt("Please enter a number for the table:");
+
+// if (num === "" || num === null) {
+//     num = 5;
+// }
+
+// document.writeln("<h2>Multiplication Table of " + num + "</h2>");
+
+// document.writeln(num + " x 1 = " + (num * 1) + "<br>");
+// document.writeln(num + " x 2 = " + (num * 2) + "<br>");
+// document.writeln(num + " x 3 = " + (num * 3) + "<br>");
+// document.writeln(num + " x 4 = " + (num * 4) + "<br>");
+// document.writeln(num + " x 5 = " + (num * 5) + "<br>");
+// document.writeln(num + " x 6 = " + (num * 6) + "<br>");
+// document.writeln(num + " x 7 = " + (num * 7) + "<br>");
+// document.writeln(num + " x 8 = " + (num * 8) + "<br>");
+// document.writeln(num + " x 9 = " + (num * 9) + "<br>");
+// document.writeln(num + " x 10 = " + (num * 10) + "<br>");
+
+
+// QUESTION NO 6
+// (a)
+// var subject1 = prompt("Enter first subject name:");
+// var subject2 = prompt("Enter second subject name:");
+// var subject3 = prompt("Enter third subject name:");
+
+// (b)
+// var totalMarksPerSubject = 100;
+
+// (c)
+// var obtained1 = Number(prompt("Enter obtained marks for " + subject1 + ":"));
+
+// (d)
+// var obtained2 = Number(prompt("Enter obtained marks for " + subject2 + ":"));
+// var obtained3 = Number(prompt("Enter obtained marks for " + subject3 + ":"));
+
+// (e)
+// var totalObtained = obtained1 + obtained2 + obtained3;
+// var grandTotalMarks = totalMarksPerSubject * 3;
+// var totalPercentage = (totalObtained / grandTotalMarks) * 100;
+
+// var per1 = (obtained1 / totalMarksPerSubject) * 100;
+// var per2 = (obtained2 / totalMarksPerSubject) * 100;
+// var per3 = (obtained3 / totalMarksPerSubject) * 100;
+
+// document.writeln("<table border='0' cellpadding='10'>");
+// document.writeln("<tr><th>Subject</th><th>Total Marks</th><th>Obtained Marks</th><th>Percentage</th></tr>");
+
+// document.writeln("<tr><td>" + subject1 + "</td><td>" + totalMarksPerSubject + "</td><td>" + obtained1 + "</td><td>" + per1 + "%</td></tr>");
+// document.writeln("<tr><td>" + subject2 + "</td><td>" + totalMarksPerSubject + "</td><td>" + obtained2 + "</td><td>" + per2 + "%</td></tr>");
+// document.writeln("<tr><td>" + subject3 + "</td><td>" + totalMarksPerSubject + "</td><td>" + obtained3 + "</td><td>" + per3 + "%</td></tr>");
+
+// document.writeln("<tr><th></th><th>" + grandTotalMarks + "</th><th>" + totalObtained + "</th><th>" + totalPercentage.toFixed(0) + "%</th></tr>");
+// document.writeln("</table>");
+
+
+// CHAPTER 9-11
+
+// QUESTION NO 1
+// var city = prompt("Please enter your city name:");
+
+// if (city.toLowerCase() === "karachi") {
+//     // alert("Welcome to city of lights");
+//     document.writeln("<h1>Welcome to city of lights</h1>");
+// }
+
+
+// QUESTION NO 2
+// var gender = prompt("Please enter your gender (male/female):");
+
+// var genderLower = gender.toLowerCase();
+
+// if (genderLower === "male") {
+//     alert("Good Morning Sir.");
+// }
+
+// if (genderLower === "female") {
+//     alert("Good Morning Ma'am.");
+// }
+
+
+// QUESTION NO 3
+// var signalColor = prompt("Enter the traffic signal color (Red, Yellow, or Green):");
+
+// var color = signalColor.toLowerCase();
+
+// if (color === "red") {
+//     alert("Must Stop");
+//     document.writeln("<h1>Red: Must Stop</h1>");
+// }
+
+// if (color === "yellow") {
+//     alert("Ready to move");
+//     document.writeln("<h1>Yellow: Ready to move</h1>");
+// }
+
+// if (color === "green") {
+//     alert("Move now");
+//     document.writeln("<h1>Green: Move now</h1>");
+// }
+
+
+// QUESTION NO 4
+// var fuel = parseFloat(prompt("Enter remaining fuel in car (in litres):"));
+
+// if (fuel < 0.25) {
+//     alert("Please refill the fuel in your car");
+// }
+
+
+// QUESTION NO 5
+// (a)
+// var a = 4;
+// if (++a === 5){
+//     alert("given condition for variable a is true");
+// }
+
+// (b)
+// var b = 82;
+// if (b++ === 83){
+//     alert("given condition for variable b is true");
+// }
+
+// (c)
+// var c = 12;
+// if (c++ === 13){
+//     alert("condition 1 is true");
+// }
+// if (c === 13){
+//     alert("condition 2 is true");
+// }
+// if (++c < 14){
+//     alert("condition 3 is true");
+// }
+// if (c === 14){
+//     alert("condition 4 is true");
+// }
+
+// (d)
+// var materialCost = 20000;
+// var laborCost = 2000;
+// var totalCost = materialCost + laborCost;
+// if (totalCost === laborCost + materialCost){
+//     alert("The cost equals");
+// }
+
+// (e)
+// if (true){
+//     alert("True");
+// }
+// if (false){
+//     alert("False");
+// }
+
+// f. (f)
+// if("car" < "cat"){
+//     alert("car is smaller than cat");
+// }
+
+
+// QUESTION NO 6
+// var sub1 = prompt("Enter first subject name:");
+// var sub2 = prompt("Enter second subject name:");
+// var sub3 = prompt("Enter third subject name:");
+
+// var totalMarks = 300;
+
+// var marks1 = +prompt("Enter obtained marks for " + sub1 + ":");
+// var marks2 = +prompt("Enter obtained marks for " + sub2 + ":");
+// var marks3 = +prompt("Enter obtained marks for " + sub3 + ":");
+
+// var totalObtained = marks1 + marks2 + marks3;
+// var percentage = (totalObtained / totalMarks) * 100;
+
+// var grade;
+// var remarks;
+
+// if (percentage >= 80) {
+//     grade = "A-one";
+//     remarks = "Excellent";
+// } 
+// else if (percentage >= 70) {
+//     grade = "A";
+//     remarks = "Good";
+// } 
+// else if (percentage >= 60) {
+//     grade = "B";
+//     remarks = "You need to improve";
+// } 
+// else {
+//     grade = "Fail";
+//     remarks = "Sorry";
+// }
+
+// document.writeln("<h1>Marks Sheet</h1>");
+// document.writeln("<p>Total marks : " + totalMarks + "</p>");
+// document.writeln("<p>Marks obtained : " + totalObtained + "</p>");
+// document.writeln("<p>Percentage : " + percentage.toFixed(0) + "%</p>");
+// document.writeln("<p>Grade : " + grade + "</p>");
+// document.writeln("<p>Remarks : " + remarks + "</p>");
+
+
+// QUESTION NO 7
+// var secretNum = 7; 
+
+// var userGuess = +prompt("Guess the secret number (between 1 to 10):");
+
+// (a)
+// if (userGuess === secretNum) {
+//     alert("Bingo! Correct answer");
+// } 
+// (b)
+// else if (userGuess + 1 === secretNum) {
+//     alert("Close enough to the correct answer");
+// }
+
+
+// QUESTION NO 8
+// var num = +prompt("Enter a number to check if it's divisible by 3:");
+
+// if (num % 3 === 0) {
+//     alert("The number " + num + " is divisible by 3");
+// } else {
+//     alert("The number " + num + " is NOT divisible by 3");
+// }
+
+
+// QUESTION NO 9
+// var inputNumber = +prompt("Enter a number to check if it's Even or Odd:");
+
+// if (inputNumber % 2 === 0) {
+//     alert(inputNumber + " is an Even number.");
+// } 
+// else {
+//     alert(inputNumber + " is an Odd number.");
+// }
+
+
+// QUESTION NO 10
+// var temp = +prompt("Enter the temperature in your city:");
+
+// if (temp > 40) {
+//     alert("It is too hot outside.");
+// } 
+// else if (temp > 30) {
+//     alert("The Weather today is Normal.");
+// } 
+// else if (temp > 20) {
+//     alert("Today's Weather is cool.");
+// } 
+// else if (temp > 10) {
+//     alert("OMG! Today's weather is so Cool.");
+// }
+// else {
+//     alert("It's freezing outside!");
+// }
+
+
+// QUESTION NO 11
+// var firstNum = +prompt("Enter first number:");
+// var secondNum = +prompt("Enter second number:");
+// var operation = prompt("Enter operation (+, -, *, /, %):");
+
+// var result;
+
+// if (operation === "+") {
+//     result = firstNum + secondNum;
+// } 
+// else if (operation === "-") {
+//     result = firstNum - secondNum;
+// } 
+// else if (operation === "*") {
+//     result = firstNum * secondNum;
+// } 
+// else if (operation === "/") {
+//     result = firstNum / secondNum;
+// } 
+// else if (operation === "%") {
+//     result = firstNum % secondNum;
+// } 
+// else {
+//     result = "Invalid Operation!";
+// }
+
+// 3. Result show karein
+alert("Result: " + result);
 // CHAPTER 12-13
 
 // QUESTION NO 1
